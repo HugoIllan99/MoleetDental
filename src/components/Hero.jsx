@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import './Hero.css'
+import logo from '../assets/logo.png'
 
 function Hero() {
   return (
@@ -45,22 +46,18 @@ function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: 'easeOut', delay: 0.15 }}
         >
-          <svg className="hero__arc" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="210" cy="210" r="190" stroke="#DCE8F7" strokeWidth="1.5" />
-            <motion.path
-              d="M90 230C120 150 160 120 210 120C260 120 240 210 210 230C180 250 300 260 320 190"
-              stroke="#14315C"
-              strokeWidth="4"
-              strokeLinecap="round"
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.4 }}
+          
+          <div className="hero__logo-wrap">
+            <motion.img
+              src={logo}
+              alt="Moleet Dental Unit"
+              className="hero__logo-float"
+              animate={{ y: [0, -14, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
             />
-          </svg>
-          <div className="hero__badge">
-            <strong>Siempre</strong>
-            <span>abierto</span>
           </div>
+
+
         </motion.div>
       </div>
     </section>

@@ -63,7 +63,26 @@
 .hero__stats dd { font-size: 0.82rem; color: #62708A; margin: 2px 0 0; }
 
 .hero__visual { position: relative; display: flex; align-items: center; justify-content: center; }
-.hero__arc { width: 100%; max-width: 420px; height: auto; }
+.hero__arc-bg { width: 100%; max-width: 420px; height: auto; }
+
+.hero__arc-bg {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+.hero__logo-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__logo-float {
+  width: 600px;
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(20, 49, 92, 0.18));
+}
 
 .hero__badge {
   position: absolute;

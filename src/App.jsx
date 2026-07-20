@@ -1,14 +1,12 @@
-import { motion } from "framer-motion"
+import Header from './components/Header'
+import Hero from './components/Hero'
 
 function App() {
   return (
-    <motion.h1
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      Bienvenido a MoleetDental
-    </motion.h1>
+    <>
+      <Header />
+      <Hero />
+    </>
   )
 }
 
